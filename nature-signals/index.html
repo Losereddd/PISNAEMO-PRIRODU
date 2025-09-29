@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Як природа передбачає катастрофи</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #ffe4f2, #e6f7ec);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #e91e63, #9c27b0, #4caf50);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      border-radius: 14px;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+      border: 2px solid #f3c5e8;
+    }
+    h2 {
+      margin-top: 0;
+      color: #8e24aa;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    .exercise {
+      background: #f3e5f5;
+      padding: 1rem;
+      border-left: 6px solid #8bc34a;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: linear-gradient(to right, #9c27b0, #4caf50);
+      color: white;
+      font-size: 0.9rem;
+    }
+    button {
+      background: linear-gradient(45deg, #ec407a, #8bc34a);
+      border: none;
+      padding: 0.7rem 1.5rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(45deg, #d81b60, #7cb342);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Як природа передбачає катастрофи</h1>
+    <p>Тварини та рослини дають нам сигнали небезпеки</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Перед землетрусами</h2>
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nJTIwc2NhcnklMjB3YXRjaHxlbnwwfHwwfHw%3D&ixlib=rb-4.0.3&q=80&w=1080" alt="Собаки перед землетрусом" />
+      <p>Собаки та коти стають тривожними, гавкають і не сплять. Жаби залишають водойми. У Китаї 1975 року людей врятувало спостереження за масовим виходом змій із нір.</p>
+    </section>
+
+    <section>
+      <h2>Перед цунамі та штормами</h2>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Слон тікає від води" />
+      <p>Слони й буйволи відчувають низькі вібрації води й рухаються до пагорбів. Птахи масово зриваються й летять подалі від узбережжя.</p>
+    </section>
+
+    <section>
+      <h2>Перед виверженнями вулканів</h2>
+      <img src="https://images.unsplash.com/photo-1502786129293-79981df4e689" alt="Вулкан" />
+      <p>Мурахи та інші комахи залишають свої нори, відчуваючи гази й тепло ґрунту. Багато тварин починають утікати задовго до виверження.</p>
+    </section>
+
+    <section>
+      <h2>Рослини як сигналізатори</h2>
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Квіти перед дощем" />
+      <p>Деякі квіти закриваються перед дощем за кілька годин до зливи, а листя скручується, реагуючи на зміну вологості та тиску.</p>
+    </section>
+
+    <section class="exercise">
+      <h2>Міні-вправа</h2>
+      <p>Уявіть, що ви біля річки й бачите, як птахи масово здіймаються вгору, а собаки починають тікати. Що ви зробите?</p>
+      <button onclick="showRandomAnswer()">Перевірити відповідь</button>
+      <p id="answer" style="margin-top:10px; font-weight:bold; color:#d81b60;"></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Пізнаємо природу — Природні сигнали катастроф
+  </footer>
+
+  <script>
+    const answers = [
+      'Відійти подалі від води та піднятися на височину!',
+      'Шукати укриття на безпечній відстані від річки.',
+      'Попередити інших і рухатися у напрямку пагорбів.',
+      'Спостерігати за поведінкою тварин і обирати безпечний шлях.'
+    ];
+
+    function showRandomAnswer() {
+      const idx = Math.floor(Math.random() * answers.length);
+      document.getElementById('answer').textContent = answers[idx];
+    }
+  </script>
+</body>
+</html>
